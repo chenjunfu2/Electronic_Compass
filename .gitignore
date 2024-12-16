@@ -1,0 +1,12 @@
+#忽略文件
+.vs/
+.git/
+backup/
+Debug/
+Release/
+x64/
+ConvertSerialData/Debug/
+ConvertSerialData/Release/
+ConvertSerialData/x64/
+指南针/__vm/
+相关项目/

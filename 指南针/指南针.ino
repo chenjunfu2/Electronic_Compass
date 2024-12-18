@@ -575,7 +575,7 @@ void loop()
 		{
 			sensor.update();//如果foc被关了，需要自己更新，否则foc会更新，只要输出即可
 		}
-		Serial.printf("A:%.3f,V:%.3f\n", sensor.getAngle(), sensor.getVelocity());//显示当前角度//S
+		Serial.printf("A:%.3f,V:%.3f\n", sensor.getAngle() * 180 / PI, sensor.getVelocity() * 180 / PI);//显示当前角度//S
 	}
 	command0.run();//执行命令(从Serial读取)
 }
